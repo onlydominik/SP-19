@@ -1,0 +1,15 @@
+.calculator__results {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--clr-primary-black);
+  & strong {
+    color: var(--clr-primary-purple);
+  }
+}
+
+@media (min-width: 50rem) {
+  .calculator__results {
+    font-size: 4rem;
+  }
+}

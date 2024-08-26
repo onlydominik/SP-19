@@ -4,38 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/main.css">
   <title>Age calculator app</title>
 </head>
 
 <body>
-  <div class="inputs">
-    <label for="day">DAY</label>
-    <input type="text" id="day">
+  <main class="calculator">
+    <div class="calculator__inputs">
+      <label for="day">DAY
+        <input placeholder="DD" type="text" id="day" autocomplete="off">
+      </label>
 
-    <label for="month">MONTH</label>
-    <input type="text" id="month">
-
-    <label for="year">YEAR</label>
-    <input type="text" id="year">
-
-  </div>
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-  <div class="date__display">
-    <p><strong>--</strong>years</p>
-    <p><strong>--</strong>months</p>
-    <p><strong>--</strong>days</p>
-  </div>
-  -- years
-  -- months
-  -- days
-
+      <label for="month">MONTH
+        <input placeholder="MM" type="text" id="month" autocomplete="off">
+      </label>
+      <label for="year">YEAR
+        <input placeholder="YYYY" type="text" id="year" autocomplete="off">
+      </label>
+    </div>
+    <div class="calculator__btn">
+      <div></div><button></button>
+    </div>
+    <div class="calculator__results">
+      <p><strong>--</strong> years</p>
+      <p><strong>--</strong> months</p>
+      <p><strong>--</strong> days</p>
+    </div>
+  </main>
+  <script src="./lib/moment/moment.min.js"></script>
+  <script src="./main.js"></script>
 
 </body>
 

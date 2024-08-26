@@ -1,0 +1,15 @@
+.calculator {
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-white-100);
+  padding: 3rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 7rem 1.5rem;
+}
+
+@media (min-width: 50rem) {
+  .calculator {
+    min-width: 40rem;
+    place-content: unset;
+    padding: 3rem;
+  }
+}
