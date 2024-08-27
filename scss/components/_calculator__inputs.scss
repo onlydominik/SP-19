@@ -30,9 +30,22 @@ label {
   font-weight: 700;
   color: var(--clr-white-400);
   letter-spacing: 0.1em;
+  width: min-content;
+  transition: all 100ms ease-out;
 }
 
-@media (min-width: 50rem) {
+.input__invalid {
+  color: var(--clr-primary-red);
+  letter-spacing: 0;
+  font-style: italic;
+  font-weight: 400;
+  max-width: 90%;
+  text-wrap: wrap;
+  font-size: var(--fs-300);
+  margin-block-start: 0.3rem;
+}
+
+@media (min-width: 37.5rem) {
   input {
     font-size: var(--fs-700);
     padding-inline-start: 1rem;

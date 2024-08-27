@@ -13,13 +13,16 @@
     <div class="calculator__inputs">
       <label for="day">DAY
         <input placeholder="DD" type="text" id="day" autocomplete="off">
+        <p class="input__invalid"></p>
       </label>
 
       <label for="month">MONTH
         <input placeholder="MM" type="text" id="month" autocomplete="off">
+        <p class="input__invalid"></p>
       </label>
       <label for="year">YEAR
         <input placeholder="YYYY" type="text" id="year" autocomplete="off">
+        <p class="input__invalid"></p>
       </label>
     </div>
     <div class="calculator__btn">
@@ -32,6 +35,7 @@
     </div>
   </main>
   <script src="./lib/moment/moment.min.js"></script>
+  <script src="./lib/moment/moment-precise-range.js"></script>
   <script src="./main.js"></script>
 
 </body>
