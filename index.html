@@ -4,30 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dominik">
+  <meta name="description" content="Age Calculator">
+  <meta property="og:title" content="Age Calculator">
+  <meta property="og:description" content="Nice Age Calculator">
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="./dist/main.css">
   <title>Age calculator app</title>
 </head>
 
 <body>
   <main class="calculator">
-    <div class="calculator__inputs">
-      <label for="day">DAY
-        <input placeholder="DD" type="text" id="day" autocomplete="off">
-        <p class="input__invalid"></p>
-      </label>
+    <form id="calculatorForm">
+      <div class="calculator__inputs">
+        <label for="day">DAY
+          <input placeholder="DD" type="text" id="day" autocomplete="off" data-validDay data-err="Must be a valid day">
+          <p class="input__invalid"></p>
+        </label>
 
-      <label for="month">MONTH
-        <input placeholder="MM" type="text" id="month" autocomplete="off">
-        <p class="input__invalid"></p>
-      </label>
-      <label for="year">YEAR
-        <input placeholder="YYYY" type="text" id="year" autocomplete="off">
-        <p class="input__invalid"></p>
-      </label>
-    </div>
-    <div class="calculator__btn">
-      <div></div><button></button>
-    </div>
+        <label for="month">MONTH
+          <input placeholder="MM" type="text" id="month" autocomplete="off" data-validMonth
+            data-err="Must be a valid month">
+          <p class="input__invalid"></p>
+        </label>
+        <label for="year">YEAR
+          <input placeholder="YYYY" type="text" id="year" autocomplete="off" data-validYear
+            data-err="Must be in the past">
+          <p class="input__invalid"></p>
+        </label>
+      </div>
+      <div class="calculator__btn">
+        <div></div><button aria-label="calculatorSubmitButton" type="submit"></button>
+      </div>
+    </form>
     <div class="calculator__results">
       <p><strong>--</strong> years</p>
       <p><strong>--</strong> months</p>
@@ -36,7 +45,7 @@
   </main>
   <script src="./lib/moment/moment.min.js"></script>
   <script src="./lib/moment/moment-precise-range.js"></script>
-  <script src="./main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 

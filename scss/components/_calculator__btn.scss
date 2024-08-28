@@ -16,7 +16,7 @@
     border: none;
     border-radius: 50%;
     background-color: var(--clr-primary-purple);
-    background: url(/assets/images/icon-arrow.svg) no-repeat center,
+    background: url("../assets/images/icon-arrow.svg") no-repeat center,
       var(--clr-primary-purple);
     background-size: 1.5rem;
     font-weight: 800;
@@ -40,7 +40,8 @@
     & button {
       width: 4.5rem;
       height: 4.5rem;
-      background: url(/assets/images/icon-arrow--mobile.svg) no-repeat center,
+      background: url("../assets/images/icon-arrow--mobile.svg") no-repeat
+          center,
         var(--clr-primary-purple);
       background-size: 2.5rem;
       justify-self: end;

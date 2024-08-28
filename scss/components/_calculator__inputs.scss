@@ -39,10 +39,26 @@ label {
   letter-spacing: 0;
   font-style: italic;
   font-weight: 400;
-  max-width: 90%;
+  max-width: 95%;
   text-wrap: wrap;
   font-size: var(--fs-300);
   margin-block-start: 0.3rem;
+  height: 1rem;
+}
+
+.label-invalid {
+  color: var(--clr-primary-red);
+}
+
+.input-invalid {
+  border-color: var(--clr-primary-red);
+  &:focus-visible {
+    outline-color: var(--clr-primary-red);
+    caret-color: var(--clr-primary-red);
+  }
+  &:hover {
+    border-color: var(--clr-primary-red);
+  }
 }
 
 @media (min-width: 37.5rem) {
@@ -54,5 +70,10 @@ label {
 
   label {
     letter-spacing: 0.2rem;
+  }
+
+  .input__invalid {
+    height: 0;
+    max-width: 100%;
   }
 }
